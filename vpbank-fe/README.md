@@ -1,9 +1,9 @@
-1. ## INSTALLATION
+### Installation
 
 ```
 npm install
 ```
-2. ## RUN APPLICATION
+## Run application
 
 ```
 npm start
