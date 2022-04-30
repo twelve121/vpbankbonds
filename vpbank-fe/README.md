@@ -1,4 +1,4 @@
-1.## INSTALLATION
+1. ## INSTALLATION
 
 ```
 npm install
