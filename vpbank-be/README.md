@@ -35,3 +35,9 @@ npm install
 ```
 npm install sails -g
 ```
+
+### Run Application
+
+```
+sails lift
+```
