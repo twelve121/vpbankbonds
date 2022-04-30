@@ -8,6 +8,7 @@ import AddBonds from './AddBonds'
 import moment from 'moment';
 import './App.css'
 import { ToastContainer, toast } from 'react-toastify';
+import ExportXLXS from './ExportXLXS';
 
 
 function Home() {
@@ -19,6 +20,7 @@ function Home() {
     const [action, setAction] = useState('')
     const [alert, setAlert] = useState('')
 
+    console.log(data)
 
     const numberWithCommas = (x) => {
         return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
@@ -124,10 +126,11 @@ function Home() {
                             <i className="far fa-times-circle"></i>
                             <span className='button-text'>Xóa</span>
                         </button>
-                        <button className='header-button'>
+                        {/* <button className='header-button'>
                             <i className="far fa-cloud-download"></i>
                             <span className='button-text'>Kết xuất</span>
-                        </button>
+                        </button> */}
+                        <ExportXLXS csvData={data} fileName='VpbankBonds'/>
                     </div>
                 </div>
                 <div className='data-content'>
